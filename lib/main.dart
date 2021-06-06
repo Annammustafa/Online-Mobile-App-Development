@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:hello/home.dart';
+
+
+
+
 
 void main() {
   runApp(MyApp());
 }
-
-class MyApp extends StatelessWidget {
+ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ( 
-        Scaffold(body: Text("Annam Mustaf rahooja"),)
-      ), 
-    );
-  }
-}
+      debugShowCheckedModeBanner: false,
+       home: Scaffold(
+         body: Home()),
+      
+      );
+ }
+ }
